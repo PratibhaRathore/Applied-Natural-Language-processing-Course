@@ -1,0 +1,49 @@
+There are different ways to get the gist of a collection of text, or a single large text. In this assignment we will explore techniques for effectively extracting keyphrases from texts.
+
+Your goal is to identify important terms (descriptive keyphrases) from the collection or text that helps a reader understand the main topics and subtopics, given only a quick look.   Your output can contain at most 2000 characters in the final summary.  If you have too many, your assignment will be returned.
+
+One purpose of this exercise is for you to see how far you can push simple techniques, because often they do almost as well as, if not better than, more complex techniques. For this reason, I want you to limit  your approaches to what we've covered in class so far.
+
+You should turn in the best output you can produce by trying variations of several different techniques.  I want you to try this both on your personal collection and on the Brown corpus news collection. After you determine your best algorithm, I'm going to give the entire class a new, fresh collection, we'll run everyone's code on it. I may also  ask you to give feedback to another student on their code.
+
+Your assignment must try at least three of the following main approaches, in combination or isolation.  Even if you don't end up using the technique, you must at some point try at least 3 out of 4 of these:
+
+1. Showing Frequent Terms 
+Frequent Unigrams (with or without stemming, stopwords, and other normalization)
+Frequent Bigram frequencies (with or without stemming, stopwords, and other normalization)
+Other variations on frequent n-grams
+2. Collocations
+Statistics-based Collocations (PMI, Chi-squared, etc)
+Syntactic-Pattern-Based Collocations (as in Justeson & Katz)
+3. Information obtained from Syntax aka Partial Parsing (Chunking)
+Predicate Argument Structure (e.g., common objects of verbs)
+(Even) Smarter Noun Phrases than Pattern-Based Collocations
+4. Using Semantic Similarity / Finding Higher-Level Concepts
+Using a thesaurus to map related words into similar concepts 
+Using a thesaurus to find higher-level concepts
+Each gist (list of keyphrases) is limited to maximum of 2000 characters and to keep things focused, it must be generated with print statements (no graphics).  Feel free to use a list, table, numbers, etc.  You can include sentences or introductory or grouping phrases if you like. That is up to you.
+
+Your code must be written up in a self-contained ipython notebook.
+
+Notebooks must be clearly documented using markdown to explain each step.
+It must be possible to load a new raw text collection from a url and just run it from your notebook.  Please include a commented out statement in your notebook that we can uncomment and run that will just work so we can test your code on a new input file.
+To turn in:
+
+A. One notebook summarizing your best algorithm.  This notebook should contain:
+
+The algorithm's output on the following:
+Your personal collection and
+The Brown corpus news category
+The mystery collection  [Update from class 10/7: you will turn your output on the mystery text in class on Monday 10/12]
+A prose description written in markup in your notebook describing
+The algorithm and its code (documented either with markup or comments)
+Some of the experiments you did and how you ended up with your choice of the final three algorithm.
+Your assignment will be assessed on:
+
+How well it adheres to the requirements of this assignment:
+Did you try at least 3 of the 4 different types of techniques described above?  
+Quality of solution:
+How well do your terms cover the different concepts?  Are they too narrow?  Too broad?  Too concentrated on just one topic at the exclusion of others?  Or do they do a great job of giving an overview of the different main topics and subtopics in a limited space. 
+How creative is your solution?
+How carefully you experimented and tried different techniques.  This doesn't mean trying every possible combination.  It does mean looking at your data and thinking about what might make sense, what works well, and what does not. Did you sufficiently justify your final choices?
+Quality of code.  Did you try to make it concise?  Did you use techniques from class?  Did you rewrite it when it got messy? Did you describe it clearly?
