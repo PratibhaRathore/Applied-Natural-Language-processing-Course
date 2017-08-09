@@ -1,0 +1,39 @@
+In this assignment you'll get experience with:
+
+using machine learning algorithms
+feature creation and selection
+NLP-style evaluation and competitions
+In team pairs, your goal is to do as well as you can on a 7-way text classification task.  The texts are short in this case: questions drawn from the Yahoo questions database.  I have assigned the team pairs; you can see your pairs under People > Kaggle Groups.  You can use your real names or a pseudonym on the leaderboard, but you have to tell me what your pseudonym is if you use one.  Kaggle lets you submit as a team, so please use this option.  Your team name can be your real names or a pseudonym.
+
+
+CLASSIFICATION STRATEGY
+
+You can use any classifiers and use any combination of features. You can choose to use feature selection, or not. You can use any corpus or resource that is part of the NLTK_data distribution and other text resources if you like (check with me first).  However, you CANNOT crawl the web and especially cannot crawl Yahoo questions to try to get more data there, since I don't want this to become a web crawler class.
+
+The seven categories are:
+
+1. Business&Finance
+2. Computers&Internet
+3. Entertainment&Music
+4. Family&Relationships
+5. Education&Reference
+6. Health
+7. Science&Mathematics
+
+TRAINING AND TESTING DATA AND EVALUATION CRITERIA
+
+You must do your training and development on the train.csv file available on the Kaggle website. The training data contains 2698 items, each labeled with one of the categories shown above, from 1 to 7.  So a given piece of text is labeled as being in the category Health, or Education&Reference.  Some will seem wrong; that is the nature of gold standards!
+
+The test data contains 1874 items that are unlabeled.   Do NOT study the text in the test set.  You must treat it like a black box.
+
+ Your job is to output a submission file  to send to the scoring tool on Kaggle.  The format of this file is (ID, category).  The category IDs are labels from 1 to 7.  
+
+I'm not going to put up the test file until Monday Oct 19, so people can just get used to processing the text in the training set before submitting to Kaggle.  I will post it on bcourses on Monday.
+
+The file samplesubmission.csv also on the Kaggle site shows you what a sample submission looks like, so you can be sure the format is correct.  (This submission thinks every item goes into category 1.)  Use this as a template for making your solution files to upload into Kaggle.
+
+You can make up to 5 submissions per day. Once you submit your results, you will get an accuracy score computed based on 30% of the test data. This score will position you somewhere on the leaderboard. Once the competition ends, you will see the final accuracy computed based on 100% of the test data. The evaluation metric is the accuracy of your classifier - so the higher the better.
+
+TO TURN IN
+
+Turn in the notebook that produced your best score.  Any code that you took from elsewhere (stackoverflow, the NLTK book, blog posts, etc.) MUST be documented with the source. 
